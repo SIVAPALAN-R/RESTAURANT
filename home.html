@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRR</title>
+  <link rel="icon" href="./images/logo.1.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- Custom CSS for font change -->
+   <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+ 
+    <!-- Navbar -->
+   
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container" >
+      <a class="navbar-brand" style="font-size: small;" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+               <a class="nav-link" href="home.html">Home</a>
+                </li>
+              </li>
+              <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Menu
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
+    <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+    <li><a class="dropdown-item" href="dinner.html">Dinner</a></li>
+    <li><a class="dropdown-item" href="icecream.html">Ice Cream</a></li>
+  </ul>
+</li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">AboutUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          
+    
+        <div class="container-fluid">
+            <form class="d-flex ms-auto" style="width: 300px;">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">🔍</button>
+            </form>
+          </div>
+
+          <div class="d-flex ms-auto">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProfile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            👤 Profile
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownProfile">
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">My Account</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+          
+      </div>
+    </div>
+  </nav>
+
+  <div class="name" style="position: relative;">
+    
+    <center>
+      <h2>SIVA REGUNATH RESTAURANT</h2>
+      <p style="font-family: 'Times New Roman', Times, serif;"><b>"Eat, drink, and be merry!"</b></p>
+    </center>
+  </div>
+   <marquee> <b>வணக்கம் டா மாப்ள...🙏...சாப்டு போங்க...🍽</marquee>
+    
+    <center>
+      <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+        <source src="./images/hvo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </center>>
+  
+  <style>
+    .name{
+      background-color: #d8a330;
+    
+      font-family:Forte
+    }
+    .name h2{
+      color: rgb(179, 5, 5) ;
+    }
+
+.col-md-4div{
+    margin: 20px;
+    flex-basis: 30%;
+    /* filter: drop-shadow( 0px 0px 10px);     */
+
+}
+.col-md-4:hover{
+    filter: drop-shadow( 0px 0px 10px black);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+
+  </style>
+
+  
+  <!-- Menu Section -->
+   
+
+  <section id="menu" class="py-5" style="background-color: #f1eee5e3; border: #d35400; padding: 20px;">
+  
+    <div class="container">
+      <h2 class="text-center mb-3"><b>Our Menu</b></h2>
+      <hr>
+      
+      <!-- Start of Menu Grid (5 Rows, each with 5 columns) -->
+      <center>
+        <h2 style="background-color: rgb(124, 175, 219);">BREAKFAST</h2>
+        <hr>
+      </center>
+      <div class="row">
+
+        <!-- Menu Item 1 -->
+       <!-- Item 1 - Dosa -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/dosa.webp" style="height: auto; width:auto" class="card-img-top" alt="Dosa">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Dosa</h5>  
+      <p class="card-text">Price $40</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal1">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1 - Dosa-->
+<div class="modal fade" id="orderModal1" tabindex="-1" aria-labelledby="orderModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel1">Dosa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/dosa.webp" style="height: 200px; width: 100%;" alt="Dosa">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $40</p>
+      
+ <!-- Product Count Selector -->
+ <div class="d-flex align-items-center">
+  <button class="btn btn-secondary" id="decreaseCount">-</button>
+  <input type="text" id="productCount" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+  <button class="btn btn-secondary" id="increaseCount">+</button>
+</div>
+
+<!-- Total Price Display -->
+<p class="mt-3">Total: $<span id="totalPrice">40</span></p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<button type="button" class="btn btn-warning">Confirm Order</button>
+</div>
+
+<!-- Placeholder for success message -->
+<div id="successMessage" class="alert alert-success text-center d-none" role="alert">
+  Order placed successfully!
+</div>
+
+</div>
+</div>
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  const decreaseButton = document.getElementById("decreaseCount");
+  const increaseButton = document.getElementById("increaseCount");
+  const productCountInput = document.getElementById("productCount");
+  const totalPriceElement = document.getElementById("totalPrice");
+  const confirmButton = document.querySelector(".modal-footer .btn-warning");
+  const successMessage = document.getElementById("successMessage");
+  const modal = document.getElementById("orderModal1");
+  const pricePerItem = 40;
+
+  // Function to update the total price
+  const updateTotalPrice = () => {
+    const count = parseInt(productCountInput.value, 10);
+    totalPriceElement.textContent = count * pricePerItem;
+  };
+
+  // Decrease product count
+  decreaseButton.addEventListener("click", () => {
+    let count = parseInt(productCountInput.value, 10);
+    if (count > 1) {
+      productCountInput.value = count - 1;
+      updateTotalPrice();
+    }
+  });
+
+  // Increase product count
+  increaseButton.addEventListener("click", () => {
+    let count = parseInt(productCountInput.value, 10);
+    productCountInput.value = count + 1;
+    updateTotalPrice();
+  });
+
+  // Confirm order
+confirmButton.addEventListener("click", () => {
+  // Redirect to the new page
+  window.location.href = "order_details.html";
+});
+
+
+  // Confirm order
+  confirmButton.addEventListener("click", () => {
+    // Close the modal
+    const bootstrapModal = bootstrap.Modal.getInstance(modal);
+    bootstrapModal.hide();
+
+    // Show the success message
+    successMessage.classList.remove("d-none");
+
+    // Automatically hide the message after 3 seconds
+    setTimeout(() => {
+      successMessage.classList.add("d-none");
+    }, 3000);
+  });
+});
+
+</script>
+
+
+<!-- Item 2 - Idli -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/Idly.webp" style="height:auto; width:auto;" class="card-img-top" alt="Idli">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Idli</h5>
+      <p class="card-text">Price $30</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal2">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 - Idli -->
+<div class="modal fade" id="orderModal2" tabindex="-1" aria-labelledby="orderModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel2">Idli</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/Idly.webp" style="height: 200px; width: 100%;" alt="Idaly">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $30</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount2">-</button>
+          <input type="text" id="productCount2" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount2">+</button>
+        </div>
+        
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice2">30</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder2">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem2 = 30;
+
+    // Selectors for Idli modal
+    const decreaseButton2 = document.getElementById("decreaseCount2");
+    const increaseButton2 = document.getElementById("increaseCount2");
+    const productCountInput2 = document.getElementById("productCount2");
+    const totalPriceElement2 = document.getElementById("totalPrice2");
+    const confirmButton2 = document.getElementById("confirmOrder2");
+
+    // Function to update the total price for Idli
+    const updateTotalPrice2 = () => {
+      const count2 = parseInt(productCountInput2.value, 10);
+      totalPriceElement2.textContent = count2 * pricePerItem2;
+    };
+
+    // Decrease product count for Idli
+    decreaseButton2.addEventListener("click", () => {
+      let count2 = parseInt(productCountInput2.value, 10);
+      if (count2 > 1) {
+        productCountInput2.value = count2 - 1;
+        updateTotalPrice2();
+      }
+    });
+
+    // Increase product count for Idli
+    increaseButton2.addEventListener("click", () => {
+      let count2 = parseInt(productCountInput2.value, 10);
+      productCountInput2.value = count2 + 1;
+      updateTotalPrice2();
+    });
+
+    // Confirm order for Idli
+    confirmButton2.addEventListener("click", () => {
+      // Redirect to the new order details page
+      window.location.href = "order_details.html";
+    });
+  });
+</script>
+
+
+
+
+<!-- Item 3 - Poori -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/poori.webp" style="height: auto; width: auto;" class="card-img-top" alt="Poori">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Poori</h5>
+      <p class="card-text">Price $25</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal3">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 - Poori -->
+<div class="modal fade" id="orderModal3" tabindex="-1" aria-labelledby="orderModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel3">Poori</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/poori.webp" style="height: 200px; width: 100%;" alt="Poori">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $25</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount3">-</button>
+          <input type="text" id="productCount3" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount3">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice3">25</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder3">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem3 = 25;
+
+    // Selectors for Poori modal
+    const decreaseButton3 = document.getElementById("decreaseCount3");
+    const increaseButton3 = document.getElementById("increaseCount3");
+    const productCountInput3 = document.getElementById("productCount3");
+    const totalPriceElement3 = document.getElementById("totalPrice3");
+    const confirmButton3 = document.getElementById("confirmOrder3");
+
+    // Function to update the total price for Poori
+    const updateTotalPrice3 = () => {
+      const count3 = parseInt(productCountInput3.value, 10);
+      totalPriceElement3.textContent = count3 * pricePerItem3;
+    };
+
+    // Decrease product count for Poori
+    decreaseButton3.addEventListener("click", () => {
+      let count3 = parseInt(productCountInput3.value, 10);
+      if (count3 > 1) {
+        productCountInput3.value = count3 - 1;
+        updateTotalPrice3();
+      }
+    });
+
+    // Increase product count for Poori
+    increaseButton3.addEventListener("click", () => {
+      let count3 = parseInt(productCountInput3.value, 10);
+      productCountInput3.value = count3 + 1;
+      updateTotalPrice3();
+    });
+
+    // Confirm order for Poori
+    confirmButton3.addEventListener("click", () => {
+      // Redirect to the new order details page
+      window.location.href = "order_details.html";
+    });
+  });
+</script>
+
+<hr>
+<!--Lunch-->
+<center>
+  <h2 style="background-color: rgb(124, 175, 219);">LUNCH</h2>
+  <hr>
+  </center>
+ <!-- Menu Item 4 - Chicken Biryani -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/briyani.webp" style="height: auto; width: auto;" class="card-img-top" alt="Chicken Biryani">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Chicken Biryani</h5>
+      <p class="card-text">Price $150</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal4">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 - Chicken Biryani -->
+<div class="modal fade" id="orderModal4" tabindex="-1" aria-labelledby="orderModalLabel4" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel4">Chicken Biryani</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/briyani.webp" style="height: 200px; width: 100%;" alt="Chicken Biryani">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $150</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount4">-</button>
+          <input type="text" id="productCount4" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount4">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice4">150</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder4">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const pricePerItem4 = 150;
+
+  // Selectors for Chicken Biryani modal
+  const decreaseButton4 = document.getElementById("decreaseCount4");
+  const increaseButton4 = document.getElementById("increaseCount4");
+  const productCountInput4 = document.getElementById("productCount4");
+  const totalPriceElement4 = document.getElementById("totalPrice4");
+  const confirmButton4 = document.getElementById("confirmOrder4");
+
+  // Function to update the total price for Chicken Biryani
+  const updateTotalPrice4 = () => {
+    const count4 = parseInt(productCountInput4.value, 10);
+    totalPriceElement4.textContent = count4 * pricePerItem4;
+  };
+
+  // Decrease product count for Chicken Biryani
+  decreaseButton4.addEventListener("click", () => {
+    let count4 = parseInt(productCountInput4.value, 10);
+    if (count4 > 1) {
+      productCountInput4.value = count4 - 1;
+      updateTotalPrice4();
+    }
+  });
+
+  // Increase product count for Chicken Biryani
+  increaseButton4.addEventListener("click", () => {
+    let count4 = parseInt(productCountInput4.value, 10);
+    productCountInput4.value = count4 + 1;
+    updateTotalPrice4();
+  });
+
+  // Confirm order for Chicken Biryani
+  confirmButton4.addEventListener("click", () => {
+    // Save total amount to localStorage
+    const totalAmount = parseInt(totalPriceElement4.textContent, 10);
+    localStorage.setItem("totalAmount", totalAmount);
+
+    // Redirect to the order details page
+    window.location.href = "order_details.html";
+  });
+});
+
+</script>
+
+
+
+<!-- Menu Item 5 - Veg Biryani -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/veg.webp" style="height: auto; width: auto;" class="card-img-top" alt="Veg Biryani">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Veg Biryani</h5>
+      <p class="card-text">Price $100</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal5">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 - Veg Biryani -->
+<div class="modal fade" id="orderModal5" tabindex="-1" aria-labelledby="orderModalLabel5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel5">Veg Biryani</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/veg.webp" style="height: 200px; width: 100%;" alt="Veg Biryani">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $100</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount5">-</button>
+          <input type="text" id="productCount5" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount5">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice5">100</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder5">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem = 100;
+
+    // Selectors for Veg Biryani modal
+    const decreaseButton = document.getElementById("decreaseCount5");
+    const increaseButton = document.getElementById("increaseCount5");
+    const productCountInput = document.getElementById("productCount5");
+    const totalPriceElement = document.getElementById("totalPrice5");
+    const confirmButton = document.getElementById("confirmOrder5");
+
+    // Function to update the total price for Veg Biryani
+    const updateTotalPrice = () => {
+      const count = parseInt(productCountInput.value, 10);
+      totalPriceElement.textContent = count * pricePerItem;
+    };
+
+    // Decrease product count
+    decreaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      if (count > 1) {
+        productCountInput.value = count - 1;
+        updateTotalPrice();
+      }
+    });
+
+    // Increase product count
+    increaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      productCountInput.value = count + 1;
+      updateTotalPrice();
+    });
+
+    // Confirm order for Veg Biryani
+    confirmButton.addEventListener("click", () => {
+      const totalAmount = parseInt(totalPriceElement.textContent, 10);
+      localStorage.setItem("totalAmountVegBiryani", totalAmount);
+      window.location.href = "order_details.html";
+    });
+  });
+</script>
+
+
+
+<!-- Menu Item 6 - Veg Meals -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/veg meals.webp" style="height: auto; width: auto;" class="card-img-top" alt="Veg Meals">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Veg Meals</h5>
+      <p class="card-text">Price $90</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal6">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 - Veg Meals -->
+<div class="modal fade" id="orderModal6" tabindex="-1" aria-labelledby="orderModalLabel6" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel6">Veg Meals</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/veg meals.webp" style="height: 200px; width: 100%;" alt="Veg Meals">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $90</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount6">-</button>
+          <input type="text" id="productCount6" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount6">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice6">90</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder6">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem = 90;
+
+    // Selectors for Veg Meals modal
+    const decreaseButton = document.getElementById("decreaseCount6");
+    const increaseButton = document.getElementById("increaseCount6");
+    const productCountInput = document.getElementById("productCount6");
+    const totalPriceElement = document.getElementById("totalPrice6");
+    const confirmButton = document.getElementById("confirmOrder6");
+
+    // Function to update the total price for Veg Meals
+    const updateTotalPrice = () => {
+      const count = parseInt(productCountInput.value, 10);
+      totalPriceElement.textContent = count * pricePerItem;
+    };
+
+    // Decrease product count
+    decreaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      if (count > 1) {
+        productCountInput.value = count - 1;
+        updateTotalPrice();
+      }
+    });
+
+    // Increase product count
+    increaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      productCountInput.value = count + 1;
+      updateTotalPrice();
+    });
+
+    // Confirm order for Veg Meals
+    confirmButton.addEventListener("click", () => {
+      const totalAmount = parseInt(totalPriceElement.textContent, 10);
+      localStorage.setItem("totalAmountVegMeals", totalAmount);
+      window.location.href = "order_details.html";
+    });
+  });
+</script>
+
+
+<hr>
+<!--Dinner-->
+<center>
+  <h2 style="background-color: rgb(124, 175, 219);">DINNER</h2>
+  <hr>
+</center>
+
+<!-- Menu Item 7 - Parota -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/parotta.webp" style="height: auto; width: auto;" class="card-img-top" alt="Parota">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Parota</h5>
+      <p class="card-text">Price $40</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal7">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 7 - Parota -->
+<div class="modal fade" id="orderModal7" tabindex="-1" aria-labelledby="orderModalLabel7" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel7">Parota</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/parotta.webp" style="height: 200px; width: 100%;" alt="Parota">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $40</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount7">-</button>
+          <input type="text" id="productCount7" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount7">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice7">40</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder7">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem = 40;
+
+    // Selectors for Parota modal
+    const decreaseButton = document.getElementById("decreaseCount7");
+    const increaseButton = document.getElementById("increaseCount7");
+    const productCountInput = document.getElementById("productCount7");
+    const totalPriceElement = document.getElementById("totalPrice7");
+    const confirmButton = document.getElementById("confirmOrder7");
+
+    // Function to update the total price for Parota
+    const updateTotalPrice = () => {
+      const count = parseInt(productCountInput.value, 10);
+      totalPriceElement.textContent = count * pricePerItem;
+    };
+
+    // Decrease product count
+    decreaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      if (count > 1) {
+        productCountInput.value = count - 1;
+        updateTotalPrice();
+      }
+    });
+
+    // Increase product count
+    increaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      productCountInput.value = count + 1;
+      updateTotalPrice();
+    });
+
+    // Confirm order for Parota
+    confirmButton.addEventListener("click", () => {
+      const totalAmount = parseInt(totalPriceElement.textContent, 10);
+      localStorage.setItem("totalAmountParota", totalAmount);
+      window.location.href = "order_details.html";
+    });
+  });
+</script>
+
+
+
+<!-- Menu Item 8 - Chicken Rice -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/chicken fried rice.webp" style="height: auto; width: auto;" class="card-img-top" alt="Chicken Rice">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Chicken Rice</h5>
+      <p class="card-text">Price $120</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal8">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 8 - Chicken Rice -->
+<div class="modal fade" id="orderModal8" tabindex="-1" aria-labelledby="orderModalLabel8" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel8">Chicken Rice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/chicken fried rice.webp" style="height: 200px; width: 100%;" alt="Chicken Rice">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $120</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount8">-</button>
+          <input type="text" id="productCount8" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount8">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice8">120</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder8">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem = 120;
+
+    // Selectors for Chicken Rice modal
+    const decreaseButton = document.getElementById("decreaseCount8");
+    const increaseButton = document.getElementById("increaseCount8");
+    const productCountInput = document.getElementById("productCount8");
+    const totalPriceElement = document.getElementById("totalPrice8");
+    const confirmButton = document.getElementById("confirmOrder8");
+
+    // Function to update the total price for Chicken Rice
+    const updateTotalPrice = () => {
+      const count = parseInt(productCountInput.value, 10);
+      totalPriceElement.textContent = count * pricePerItem;
+    };
+
+    // Decrease product count
+    decreaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      if (count > 1) {
+        productCountInput.value = count - 1;
+        updateTotalPrice();
+      }
+    });
+
+    // Increase product count
+    increaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      productCountInput.value = count + 1;
+      updateTotalPrice();
+    });
+
+    // Confirm order for Chicken Rice
+    confirmButton.addEventListener("click", () => {
+      const totalAmount = parseInt(totalPriceElement.textContent, 10);
+      localStorage.setItem("totalAmountChickenRice", totalAmount);
+      window.location.href = "order_details.html";
+    });
+  });
+</script>
+
+
+
+<!-- Menu Item 9 - Chapathi -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/chapathi.webp" style="height: auto; width: auto;" class="card-img-top" alt="Chapathi">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Chapathi</h5>
+      <p class="card-text">Price $40</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal9">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 9 - Chapathi -->
+<div class="modal fade" id="orderModal9" tabindex="-1" aria-labelledby="orderModalLabel9" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel9">Chapathi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/chapathi.webp" style="height: 200px; width: 100%;" alt="Chapathi">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $40</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount9">-</button>
+          <input type="text" id="productCount9" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount9">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice9">40</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder9">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem = 40;
+
+    // Selectors for Chapathi modal
+    const decreaseButton = document.getElementById("decreaseCount9");
+    const increaseButton = document.getElementById("increaseCount9");
+    const productCountInput = document.getElementById("productCount9");
+    const totalPriceElement = document.getElementById("totalPrice9");
+    const confirmButton = document.getElementById("confirmOrder9");
+
+    // Function to update the total price for Chapathi
+    const updateTotalPrice = () => {
+      const count = parseInt(productCountInput.value, 10);
+      totalPriceElement.textContent = count * pricePerItem;
+    };
+
+    // Decrease product count
+    decreaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      if (count > 1) {
+        productCountInput.value = count - 1;
+        updateTotalPrice();
+      }
+    });
+
+    // Increase product count
+    increaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      productCountInput.value = count + 1;
+      updateTotalPrice();
+    });
+
+    // Confirm order for Chapathi
+    confirmButton.addEventListener("click", () => {
+      const totalAmount = parseInt(totalPriceElement.textContent, 10);
+      localStorage.setItem("totalAmountChapathi", totalAmount);
+      window.location.href = "order_details.html";
+    });
+  });
+</script>
+
+
+<hr>
+<!--Ice cream-->
+<center>
+  <h2 style="background-color: rgb(124, 175, 219);">  ICE CREAM</h2>
+  <hr>
+</center>
+
+<!-- Menu Item 10 - Butter Scotch -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/buttor scotch.webp" style="height: auto; width: auto;" class="card-img-top" alt="Butter Scotch">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Butter Scotch</h5>
+      <p class="card-text">Price $50</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal10">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 10 - Butter Scotch -->
+<div class="modal fade" id="orderModal10" tabindex="-1" aria-labelledby="orderModalLabel10" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel10">Butter Scotch</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/buttor scotch.webp" style="height: 200px; width: 100%;" alt="Butter Scotch">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $50</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount10">-</button>
+          <input type="text" id="productCount10" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount10">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice10">50</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder10">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem = 50;
+
+    // Selectors for Butter Scotch modal
+    const decreaseButton = document.getElementById("decreaseCount10");
+    const increaseButton = document.getElementById("increaseCount10");
+    const productCountInput = document.getElementById("productCount10");
+    const totalPriceElement = document.getElementById("totalPrice10");
+    const confirmButton = document.getElementById("confirmOrder10");
+
+    // Function to update the total price for Butter Scotch
+    const updateTotalPrice = () => {
+      const count = parseInt(productCountInput.value, 10);
+      totalPriceElement.textContent = count * pricePerItem;
+    };
+
+    // Decrease product count
+    decreaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      if (count > 1) {
+        productCountInput.value = count - 1;
+        updateTotalPrice();
+      }
+    });
+
+    // Increase product count
+    increaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      productCountInput.value = count + 1;
+      updateTotalPrice();
+    });
+
+    // Confirm order for Butter Scotch
+    confirmButton.addEventListener("click", () => {
+      const totalAmount = parseInt(totalPriceElement.textContent, 10);
+      localStorage.setItem("totalAmountButterScotch", totalAmount);
+      window.location.href = "order_details.html";
+    });
+  });
+</script>
+
+
+<!-- Menu Item 11 - Chocolate -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/chocolate.webp" style="height: auto; width: auto;" class="card-img-top" alt="Chocolate">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Chocolate</h5>
+      <p class="card-text">Price $50</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal11">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 11 - Chocolate -->
+<div class="modal fade" id="orderModal11" tabindex="-1" aria-labelledby="orderModalLabel11" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel11">Chocolate</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/chocolate.webp" style="height: 200px; width: 100%;" alt="Chocolate">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $50</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount11">-</button>
+          <input type="text" id="productCount11" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount11">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice11">50</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder11">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem = 50;
+
+    // Selectors for Chocolate modal
+    const decreaseButton = document.getElementById("decreaseCount11");
+    const increaseButton = document.getElementById("increaseCount11");
+    const productCountInput = document.getElementById("productCount11");
+    const totalPriceElement = document.getElementById("totalPrice11");
+    const confirmButton = document.getElementById("confirmOrder11");
+
+    // Function to update the total price for Chocolate
+    const updateTotalPrice = () => {
+      const count = parseInt(productCountInput.value, 10);
+      totalPriceElement.textContent = count * pricePerItem;
+    };
+
+    // Decrease product count
+    decreaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      if (count > 1) {
+        productCountInput.value = count - 1;
+        updateTotalPrice();
+      }
+    });
+
+    // Increase product count
+    increaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      productCountInput.value = count + 1;
+      updateTotalPrice();
+    });
+
+    // Confirm order for Chocolate
+    confirmButton.addEventListener("click", () => {
+      const totalAmount = parseInt(totalPriceElement.textContent, 10);
+      localStorage.setItem("totalAmountChocolate", totalAmount);
+      window.location.href = "order_details.html";
+    });
+  });
+</script>
+
+
+<!-- Menu Item 12 - Strawberry -->
+<div class="col-md-4">
+  <div class="card h-40">
+    <img src="./assests/straberry.webp" style="height: auto; width: auto;" class="card-img-top" alt="Strawberry">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Strawberry</h5>
+      <p class="card-text">Price $50</p>
+      <div class="mt-auto">
+        <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal12">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 12 - Strawberry -->
+<div class="modal fade" id="orderModal12" tabindex="-1" aria-labelledby="orderModalLabel12" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel12">Strawberry</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assests/straberry.webp" style="height: 200px; width: 100%;" alt="Strawberry">
+        <p>Are you sure you want to place an order?</p>
+        <p>Price $50</p>
+
+        <!-- Product Count Selector -->
+        <div class="d-flex align-items-center">
+          <button class="btn btn-secondary" id="decreaseCount12">-</button>
+          <input type="text" id="productCount12" value="1" class="form-control mx-2 text-center" style="width: 60px;" readonly>
+          <button class="btn btn-secondary" id="increaseCount12">+</button>
+        </div>
+
+        <!-- Total Price Display -->
+        <p class="mt-3">Total: $<span id="totalPrice12">50</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" id="confirmOrder12">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricePerItem = 50;
+
+    // Selectors for Strawberry modal
+    const decreaseButton = document.getElementById("decreaseCount12");
+    const increaseButton = document.getElementById("increaseCount12");
+    const productCountInput = document.getElementById("productCount12");
+    const totalPriceElement = document.getElementById("totalPrice12");
+    const confirmButton = document.getElementById("confirmOrder12");
+
+    // Function to update the total price for Strawberry
+    const updateTotalPrice = () => {
+      const count = parseInt(productCountInput.value, 10);
+      totalPriceElement.textContent = count * pricePerItem;
+    };
+
+    // Decrease product count
+    decreaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      if (count > 1) {
+        productCountInput.value = count - 1;
+        updateTotalPrice();
+      }
+    });
+
+    
+
+    // Increase product count
+    increaseButton.addEventListener("click", () => {
+      let count = parseInt(productCountInput.value, 10);
+      productCountInput.value = count + 1;
+      updateTotalPrice();
+    });
+
+    // Confirm order for Strawberry
+    confirmButton.addEventListener("click", () => {
+      const totalAmount = parseInt(totalPriceElement.textContent, 10);
+      localStorage.setItem("totalAmountStrawberry", totalAmount);
+      window.location.href = "order_details.html";
+    });
+
+    
+  });
+</script>
+
+<hr>
+
+
+
+  
+ <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .section {
+            padding: 40px 0;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .footer {
+            background-color: #3cc7c7;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section class="section">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p class="text-center">At My Restaurant, we believe that food is not just about taste; it’s about creating unforgettable experiences. Our mission is to provide high-quality, delicious meals made from the freshest ingredients, served in a warm and inviting atmosphere.</p>
+        
+        <p class="text-center">Founded in [Year], we have been serving our community with passion and dedication. Our chefs are skilled in various cuisines, bringing a world of flavors to your plate. Whether you're here for a casual meal with family or a special celebration, we strive to make every dining experience memorable.</p>
+        
+        <p class="text-center">Join us as we celebrate the art of good food and hospitality!</p>
+        
+        <div class="text-center">
+            <img src="./images/resimage.avif" alt="Restaurant Interior" class="img-fluid mb-4">
+            <p class="text-muted">A glimpse of our warm and inviting restaurant interior.</p>
+        </div>
+    </section>
+
+    <section class="section">
+      <h2 class="text-center mb-4">Our Philosophy</h2>
+      <p class="text-center">We are committed to sustainability, sourcing our ingredients from local farmers and suppliers. We prioritize organic and seasonal produce to ensure the best flavors while supporting our community. Our culinary team takes great pride in creating innovative dishes that respect traditional recipes and techniques.</p>
+      
+      <div class="video-container">
+          <iframe aria-controls="mp4" src="https://www.youtube.com/embed/kRCH8kD1GD0" title="Food Promo Video - Manual Mode Productions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="text-center">Watch our story and see how we create the magic in our kitchen!</p>
+  </section>
+</div>
+
+<!-- Contact Section -->
+    <section class="section">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2024 SIVA REGUNATH RESTAURANT. All rights reserved.</p>
+   
+  
+</footer>
+
+
+
+</body>
+</html>
+
+
