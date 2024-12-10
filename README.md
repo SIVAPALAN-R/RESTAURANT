@@ -14,7 +14,7 @@
 ## Introduction
 The **SRR Food Ordering Website** is a responsive web application that allows users to explore breakfast menu items and place orders. This is designed with a user-friendly interface using Bootstrap and JavaScript to enhance interactivity.
 
-LIVE DEMO :- 
+LIVE DEMO :- https://sivapalan-r.github.io/RESTAURANT/
 ---
 
 ## Project Structure
@@ -80,14 +80,12 @@ LIVE DEMO :-
    - Use the Profile dropdown to log in or access account settings.
 
 ---
+![Home](https://github.com/user-attachments/assets/a75d3ef0-5e31-408c-9763-f3fd28eb5ba0)
+![BreakFast](https://github.com/user-attachments/assets/fa4ed0e2-b0d8-4af2-b566-6ed1902157f6)
+![Order](https://github.com/user-attachments/assets/b91033cd-b032-4565-8fc3-1181f3221929)
+![feedback](https://github.com/user-attachments/assets/378fe48d-071a-40e2-af42-66517a726dd6)
 
-![Home](https://github.com/user-attachments/assets/fda2cdda-00ad-4e34-b06b-c45f96761d4a)
 
-![BreakFast](https://github.com/user-attachments/assets/11900106-5f15-4d64-8134-77d88d394b6a)
-
-![Order](https://github.com/user-attachments/assets/35d9bdf1-19b6-406a-9605-abf3c84fb133)
-
-![feedback](https://github.com/user-attachments/assets/fe4b97d9-47e4-4767-b29f-3c7f5c634866)
 
 ## Setup Instructions
 1. Clone the repository:
